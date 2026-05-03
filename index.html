@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MUNAAF</title>
+<link href="vendor/external_0.css" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '4312039265707638');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4312039265707638&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#021b16;
+display:flex;
+justify-content:center;
+overflow-x:hidden;
+}
+
+.wrapper{
+width:420px;
+min-height:100vh;
+padding:25px 18px;
+text-align:center;
+color:white;
+position:relative;
+background:linear-gradient(180deg,#03261e,#064b38,#021b16);
+}
+
+/* Premium Grid */
+.wrapper::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px);
+background-size:50px 50px;
+z-index:0;
+}
+
+/* Glow Effect */
+.wrapper::after{
+content:"";
+position:absolute;
+width:250px;
+height:250px;
+background:#00ff95;
+filter:blur(120px);
+opacity:0.15;
+top:50px;
+left:50%;
+transform:translateX(-50%);
+z-index:0;
+}
+
+.content{
+position:relative;
+z-index:2;
+}
+
+.profile{
+width:120px;
+height:120px;
+padding:6px;
+border-radius:28px;
+margin:auto;
+background:linear-gradient(135deg,#00ff95,#00c3ff);
+box-shadow:0 0 25px rgba(0,255,149,0.5);
+margin-bottom:18px;
+}
+
+.profile img{
+width:100%;
+height:100%;
+border-radius:22px;
+object-fit:cover;
+}
+
+h1{
+font-size:42px;
+letter-spacing:5px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.subtitle{
+font-size:22px;
+font-weight:600;
+color:#00ff95;
+margin-bottom:6px;
+}
+
+.subtext{
+font-size:14px;
+color:#d6d6d6;
+margin-bottom:30px;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-bottom:30px;
+}
+
+.box{
+background:rgba(255,255,255,0.08);
+padding:18px 10px;
+border-radius:22px;
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-4px);
+}
+
+.box h3{
+font-size:15px;
+color:#00ff95;
+margin-bottom:6px;
+}
+
+.box p{
+font-size:12px;
+color:#e0e0e0;
+}
+
+.join-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+text-decoration:none;
+padding:18px;
+border-radius:50px;
+font-size:22px;
+font-weight:600;
+color:white;
+margin:25px 0;
+background:linear-gradient(90deg,#00ff95,#00c3ff);
+box-shadow:0 0 25px rgba(0,255,149,0.6);
+animation:pulse 2s infinite;
+}
+
+.join-btn img{
+width:28px;
+height:28px;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+
+.footer{
+font-size:14px;
+margin-top:10px;
+}
+
+.footer span{
+color:#00ff95;
+font-weight:600;
+}
+
+.disclaimer{
+font-size:11px;
+color:#cfcfcf;
+line-height:1.6;
+margin-top:10px;
+padding:0 8px;
+}
+
+.telegram-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+border-radius:50%;
+background:linear-gradient(135deg,#00ff95,#00c3ff);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 25px rgba(0,255,149,0.7);
+animation:floatBtn 2s infinite alternate;
+z-index:999;
+}
+
+.telegram-float img{
+width:34px;
+height:34px;
+}
+
+@keyframes floatBtn{
+from{transform:scale(1);}
+to{transform:scale(1.1);}
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+<div class="content">
+
+<div class="profile">
+<img src="munaaf.jpg" alt="Munaaf">
+</div>
+
+<h1>MUNAAF</h1>
+<div class="subtitle">Premium Trading Community 🚀</div>
+<div class="subtext">Serious traders only • High accuracy insights</div>
+
+<div class="features">
+<div class="box">
+<h3>📊 Market Insights</h3>
+<p>Clear trend direction</p>
+</div>
+
+<div class="box">
+<h3>🎓 Education</h3>
+<p>Step-by-step training</p>
+</div>
+
+<div class="box">
+<h3>💎 Premium Setup</h3>
+<p>High probability trades</p>
+</div>
+
+<div class="box">
+<h3>📈 Consistency</h3>
+<p>Long-term growth</p>
+</div>
+</div>
+
+<a href="https://t.me/+RNdAqwdTBkhiMGM9" class="join-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+Join Telegram Now
+</a>
+
+<div class="footer">Managed by <span>Anna Group</span></div>
+<div class="disclaimer">Disclaimer: Not investment advice. Market involves risk. Educational purpose only.</div>
+
+</div>
+</div>
+
+<a href="https://t.me/+RNdAqwdTBkhiMGM9" class="telegram-float">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+</a>
+
+</body>
+</html>
